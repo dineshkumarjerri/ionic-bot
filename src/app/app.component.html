@@ -1,3 +1,41 @@
 <ion-app>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>DementiaCare Connect</ion-title>
+    <ion-button slot="end">
+      <ion-icon slot="icon-only" name="notifications"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+  <div class="floating-chat">
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger
+      project-id="cellular-tide-429410-s9"
+      agent-id="cef42c8d-e288-4d9c-ad28-68b22b732913"
+      language-code="en"
+      max-query-length="-1"
+      allow-feedback="all">
+      <!--<df-messenger-chat
+       chat-title="jerrytest">
+      </df-messenger-chat>-->
+    </df-messenger>
+    <style>
+      df-messenger {
+        z-index: 999;
+        --df-messenger-font-color: #000;
+        --df-messenger-font-family: Google Sans;
+        --df-messenger-chat-background: #f3f6fc;
+        --df-messenger-message-user-background: #d3e3fd;
+        --df-messenger-message-bot-background: #fff;
+        bottom: 66px;
+        right: 0;
+        top: 0;
+      }
+    </style>
+  </div>
   <ion-router-outlet></ion-router-outlet>
 </ion-app>
