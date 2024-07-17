@@ -1,0 +1,48 @@
+ion-content {
+  ion-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  ion-item {
+    --padding-start: 0;
+    --padding-end: 0;
+  }
+
+  ion-avatar {
+    --border-radius: 50%;
+  }
+
+  ion-label {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1em;
+  }
+
+  ion-button {
+    margin-left: 10px;
+  }
+}
+
+ion-footer {
+  ion-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  ion-input {
+    flex: 1;
+    margin: 0 10px;
+  }
+}
