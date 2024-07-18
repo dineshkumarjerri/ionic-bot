@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { VoiceInputComponent } from './components/voice-input/voice-input.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/voice-input', pathMatch: 'full' },
+  { path: 'voice-input', component: VoiceInputComponent },
+
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
