@@ -64,7 +64,7 @@ various carers/family members
 
 - option to take feed back from user on situtation and write back to agent
 - can we build/integrate data upload back to agent data store?
-### Vision  -- Julia, Amit, Nagaraja
+### Vision  -- 
 ### Data Preparation -- we should build as much data as we can
   - patient profile
     - personal, habits, family members  and thier details
